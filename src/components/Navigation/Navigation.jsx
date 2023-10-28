@@ -38,7 +38,7 @@ const Navigation = () => {
                 className="link"
                 key={`${link.title}-${id}`}
                 to={link.path}
-                Spy={true}
+                spy={true}
                 onClick={handleHam}
                 activeClass="active"
               >
