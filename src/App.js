@@ -7,6 +7,8 @@ import List from "../src/components/Events/List";
 import Tlist from "./components/Tlist/Tlist";
 import Footer from "./components/Footer/Footer";
 import Testimonials from "./components/Testimonials/Testimonials";
+import EventLandingPage from "../src/components/EventLanding/Event";
+
 import "aos/dist/aos.css";
 import Aos from "aos";
 const App = () => {
@@ -21,18 +23,20 @@ const App = () => {
   });
   return (
     <div>
-      {loader ? (
+      {/* {loader ? (
         <Loader />
-      ) : (
+      ) : ( */}
         <>
           <Navigation />
           <Header />
           <About />
           <List />
           <Tlist />
-          <Testimonials /> <Footer />
+          <Testimonials /> 
+          <EventLandingPage/>
+          <Footer />
         </>
-      )}
+      {/* )} */}
     </div>
   );
 };

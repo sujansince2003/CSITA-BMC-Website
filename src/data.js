@@ -6,6 +6,7 @@ import graphicdesigning from "./Assets/eventimg/graphicdesigning.jpg";
 import itroadmap from "./Assets/eventimg/itroadmap.jpg";
 import workshopNET from "./Assets/eventimg/workshopNET.jpg";
 import reactEvent from "./Assets/eventimg/reactEvent.jpg";
+import mlevent from "./Assets/eventimg/ML.jpg";
 
 //Teams data
 import IMG1 from "./Team/keshab.jpg";
@@ -105,6 +106,11 @@ export const products = [
     id: 7,
     title: "React Workshop",
     img: reactEvent,
+  },
+  {
+    id: 8,
+    title: "Machine Learning Workshop",
+    img: mlevent,
   },
 ];
 
@@ -289,3 +295,4 @@ export const Testidata = [
     Post: `Web Developer and President at Butwal Coder Girls`,
   },
 ];
+
