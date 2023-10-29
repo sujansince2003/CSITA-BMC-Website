@@ -1,0 +1,58 @@
+{
+  "EventOne": {
+    "Name" : "Event go",
+    "Banner" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaQW6hoJ1DFB7NMRzgCCYVPsnEf7zzB4uQig&usqp=CAU",
+    "Date": ["2023-01-01", "2023-01-02"],
+    "time": ["09:00", "17:00"],
+    "location": "New York City",
+    "tags": ["technology", "conference"],
+    "mentor": {
+      "name": "John Doe",
+      "photoUrl": "https://example.com/johndoe.jpg",
+      "post": "Senior Developer"
+    },
+    "attendees": {
+      "numberOfAttendees": 200,
+      "listOfAttendees": ["Attendee 1", "Attendee 2"]
+    },
+    "summary": "This is a summary of the first event.",
+    "registrationUrl": "https://example.com/register1",
+    "description": {
+      "title": "Event Title 1",
+      "paragraph": "This is a detailed description of the first event."
+    },
+    "reviews": {
+      "reviewerName": "Reviewer 1",
+      "reviewerLevel": "Student",
+      "stars": 4
+    }
+  },
+  "EventTwo": {
+    "Name" : "Event wow",
+    "Banner" : "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRzpaeZbCcc0f12TkSFTOBAUE5l_-f8fYY9xw&usqp=CAU",
+    "Date": ["2023-02-01", "2023-02-02"],
+    "time": ["10:00", "18:00"],
+    "location": "Los Angeles",
+    "tags": ["business", "workshop"],
+    "mentor": {
+      "name": "Jane Doe",
+      "photoUrl": "https://example.com/janedoe.jpg",
+      "post": "Business Analyst"
+    },
+    "attendees": {
+      "numberOfAttendees": 150,
+      "listOfAttendees": ["Attendee 3", "Attendee 4"]
+    },
+    "summary": "This is a summary of the second event.",
+    "registrationUrl": "https://example.com/register2",
+    "description": {
+      "title": "Event Title 2",
+      "paragraph": "This is a detailed description of the second event."
+    },
+    "reviews": {
+      "reviewerName": "Reviewer 2",
+      "reviewerLevel": "Teacher",
+      "stars": 5
+    }
+  }
+}

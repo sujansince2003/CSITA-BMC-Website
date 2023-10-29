@@ -1,17 +1,32 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import IMG from "../../Assets/partners/logohero.png";
 import "./navigation.css";
 import { Link } from "react-scroll";
 import { Links } from "../../data";
 const Navigation = () => {
-  window.onscroll = () => {
+
+//solid
+  const pathname = window.location.href
+  const url = window.location.protocol + '//' + window.location.host+'/'
+  const Url = window.location.protocol + '//' + window.location.host+'/#/'
+  const toggleSolidNavBar = () =>{
     let navbar = document.querySelector(".nav-area");
-    if (window.scrollY > 600) {
-      navbar.classList.add("toggle");
-    } else {
+    if (window.scrollY < 600 && (pathname === url || pathname === Url )) {
       navbar.classList.remove("toggle");
+    } else {
+      navbar.classList.add("toggle");
     }
-  };
+  }
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  //toggel solid nav bar based onevent 
+  window.onscroll = toggleSolidNavBar
+  useEffect( toggleSolidNavBar,[])
+  
+  
 
   //add or remove ham menu with css class
   const handleHam = () => {

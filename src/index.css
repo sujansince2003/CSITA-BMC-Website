@@ -1,3 +1,7 @@
+*{
+  font-family: "Poppins", sans-serif;
+}
+
 #root {
     overflow: hidden;
   }
@@ -54,3 +58,6 @@
 }
   
   
+.nav-ignore{
+  padding-bottom: 5rem;
+}

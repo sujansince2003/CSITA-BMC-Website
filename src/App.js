@@ -1,39 +1,17 @@
-import { React, useEffect, useState } from "react";
-import Header from "../src/components/Header/Header";
-import About from "../src/components/About/About";
-import Loader from "./components/Loader/loader";
-import Navigation from "./components/Navigation/Navigation";
-import List from "../src/components/Events/List";
-import Tlist from "./components/Tlist/Tlist";
-import Footer from "./components/Footer/Footer";
-import Testimonials from "./components/Testimonials/Testimonials";
-import "aos/dist/aos.css";
-import Aos from "aos";
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+
+import HomePage from "./Pages/HomePage";
+import EventPage from "./Pages/EventPage";
+
 const App = () => {
-  const [loader, setloader] = useState(true);
-  useEffect(() => {
-    Aos.init({ easing: "ease", duration: 700 });
-  });
-  useEffect(() => {
-    setTimeout(() => {
-      setloader(false);
-    }, 2000);
-  });
   return (
     <div>
-      {loader ? (
-        <Loader />
-      ) : (
-        <>
-          <Navigation />
-          <Header />
-          <About />
-          <List />
-          <Tlist />
-          <Testimonials />
-          <Footer />
-        </>
-      )}
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/event/:eventId" element={<EventPage />} />
+
+      </Routes>
     </div>
   );
 };

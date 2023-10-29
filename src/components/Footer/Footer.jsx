@@ -56,7 +56,7 @@ const Footer = () => {
   <Link
     className="footer-link-list pointer"
     key={index}
-    to={item.path}
+    to='/'
   >
     {item.title}
   </Link>
