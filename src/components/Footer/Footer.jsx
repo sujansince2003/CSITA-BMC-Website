@@ -15,16 +15,19 @@ const Footer = () => {
         <FooterCard
           Icon={BsFillTelephoneFill}
           title='Call'
-          decs='+977-98656565'
+          link = 'tel:9815490890'
+          decs='+977-9815490890'
         />
         <FooterCard
           Icon={HiMail}
           title='Mail'
-          decs='cstiabmc@gmail.com'
+          link = 'mailto:csitassociationbmc@gmail.com'
+          decs='csitassociationbmc@gmail.com'
         />
         <FooterCard
           Icon={FaLocationArrow}
           title='Location'
+          link ='/'
           decs='Butwal, Nepal'
         />
       </section>

@@ -295,6 +295,6 @@ export const Testidata = [
 export const socilaMedia = [
   { 
     name: 'Facebook', 
-    path: 'https://fb.com' 
+    path: 'https://www.facebook.com/csit.bmc' 
   },
 ];

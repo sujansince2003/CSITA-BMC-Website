@@ -9,7 +9,7 @@
 
 .footer-icon{
     font-size: 1.5rem;
-    color: #2d96e6;
+    color: #e62d2d;
     
 }
 .footer-card-body{
@@ -18,11 +18,12 @@
     margin-left: 1rem;
 }
 .footer-title{
-    color: #2d96e6;
+    color: #e62d2d;
     font-weight: 600;
 
 }
 .footer-decs{
+    text-decoration: none;
     padding: .2rem 0;
     font-size: .8rem;
     color: rgb(225, 225, 225);

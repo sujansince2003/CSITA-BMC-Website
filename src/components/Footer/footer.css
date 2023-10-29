@@ -10,7 +10,7 @@ footer {
 }
 .footer-card-container, .QuickLink, .RecentEvents, .connectWithUs{
   margin: 0 3rem;
-  padding: 2rem 0;
+  padding: 1rem 0;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -19,7 +19,7 @@ footer {
 
 .footer-List_title{
   color: rgb(207, 207, 207);
-  font-size: 1.4rem;
+  font-size: 1rem;
 }
 
 .footer-lists-container{
@@ -30,6 +30,7 @@ footer {
 
 .footer-link-list{
   padding: 3px 0;
+  font-size: .75rem;
   text-decoration: none;
   color: rgb(204, 204, 204);
   
