@@ -10,7 +10,7 @@ import Testimonials from "./components/Testimonials/Testimonials";
 import "aos/dist/aos.css";
 import Aos from "aos";
 const App = () => {
-  const [loader, setloader] = useState(false);
+  const [loader, setloader] = useState(true);
   useEffect(() => {
     Aos.init({ easing: "ease", duration: 700 });
   });
