@@ -20,20 +20,22 @@ const App = () => {
     }, 2000);
   });
   return (
-    <div>
-      {loader ? (
-        <Loader />
-      ) : (
-        <>
-          <Navigation />
-          <Header />
-          <About />
-          <List />
-          <Tlist />
-          <Testimonials /> <Footer />
-        </>
-      )}
-    </div>
+    // <div>
+    //   {loader ? (
+    //     <Loader />
+    //   ) : (
+    //     <>
+    //       <Navigation />
+    //       <Header />
+    //       <About />
+    //       <List />
+    //       <Tlist />
+    //       <Testimonials /> <Footer />
+    //     </>
+    //   )}
+    // </div>
+
+    <div>hello</div>
   );
 };
 
