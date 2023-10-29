@@ -6,7 +6,7 @@
   align-items: center;
   margin-top: 1em;
   position: fixed;
-  transition:  margin-top  .5s ease-in-out; 
+  transition:  all  .2s ease; 
 }
 
 .logo{
@@ -19,7 +19,7 @@
 .logo img {
   width: 70px;
   height: 70px;
-  transition: all .5s ease ;
+  transition: all .2s ease ;
 }
 
 
@@ -45,7 +45,8 @@
   text-decoration: none;
   font-family: "Poppins", sans-serif;
   font-weight: bold;
-  padding: 10px 5px;
+  margin: 0 2px;
+  padding: 10px 0 5px;
   cursor: pointer;
 }
 
@@ -54,8 +55,6 @@
   background: #fff;
   box-shadow: 0px 0px 5px 1px rgba(44, 44, 44, 0.578);
   margin-top: 0px !important;
-  transition: all .5s ease-out;
-  /* transition: background .5s ease-out; */
 }
 
 
@@ -79,6 +78,8 @@
 
 .navlinks .link {
   position: relative;
+  width: -moz-fit-content;
+  width: fit-content;
   flex-direction: column;
   align-items: center;
 }
@@ -92,12 +93,12 @@
   position: absolute;
   top: 100%;
   content: "";
-  left: 0;
+  right:0;
   background-color: red;
 }
 
 .navlinks .link:hover::after {
-  width: 100%;
+  width: 80%;
 }
 
 .active {
@@ -186,11 +187,11 @@
   .navlinks .link {
     color: white;
     width: 100%;
-    padding: 1rem 0;
+    padding: 1rem ;
   }
 
   .navlinks .link:hover {
-    background-color: #eee;
+    background-color: #444444;
   }
 
   .nav-area {
