@@ -146,35 +146,35 @@ export const teamdata = [
     Facebook: "https://www.facebook.com/itsmesarad",
   },
   {
-    id: 5,
+    id: 6,
     Name: "SUJAN KHATRI",
     img: IMG6,
     Post: "Tech-Lead",
     Facebook: "https://www.facebook.com/sujansince2003",
   },
   {
-    id: 6,
+    id: 7,
     Name: "BIBEK ACHARYA",
     img: IMG7,
     Post: "Ass. Tech Lead",
     Facebook: "https://www.facebook.com/Bibekacharya2059",
   },
   {
-    id: 7,
+    id: 8,
     Name: "ANURADHA PANDEY",
     img: IMG8,
     Post: "Graphic Designer",
     Facebook: "https://www.facebook.com/profile.php?id=100035413025994",
   },
   {
-    id: 8,
+    id: 9,
     Name: "SUNIL BHATTARAI",
     img: IMG9,
     Post: "Executive Member",
     Facebook: "https://www.facebook.com/sunil.bhattarai.2056",
   },
   {
-    id: 9,
+    id: 10,
     Name: "SANCHIT PANDEY",
     img: IMG10,
     Post: "Executive Member",
@@ -188,21 +188,21 @@ export const teamdata = [
     Facebook: "https://www.facebook.com/im.bipo",
   },
   {
-    id: 10,
+    id: 12,
     Name: "KRITAN ARYAL",
     img: IMG12,
     Post: "Executive Member",
     Facebook: "https://www.facebook.com/aryal.kritan",
   },
   {
-    id: 12,
+    id: 13,
     Name: "PRATIK ARYAL",
     img: IMG13,
     Post: "Executive Member",
     Facebook: "https://www.facebook.com/pratik.aryal.9615",
   },
   {
-    id: 13,
+    id: 14,
     Name: "SHIKSHYA ACHARYA",
     img: IMG14,
     Post: "Executive Member",
@@ -212,27 +212,19 @@ export const teamdata = [
 
 //Exporting testimonials data
 export const Partdata = [
-  { id: 10, Image: img10 },
-  { id: 3, Image: img3 },
-  { id: 4, Image: img4 },
   { id: 1, Image: img1 },
   { id: 2, Image: img2 },
+  { id: 3, Image: img3 },
+  { id: 4, Image: img4 },
   { id: 5, Image: img5 },
   { id: 6, Image: img6 },
   { id: 7, Image: img7 },
   { id: 8, Image: img8 },
   { id: 9, Image: img9 },
+  { id: 10, Image: img10 },
 ];
 
 export const Testidata = [
-  {
-    id: 1,
-    image: Rabin,
-    Name: "Rabin Pandey",
-    testimony: `Technology can be our closest companion, and technology can likewise be the greatest partypopper of our lives.It plays a major role in our lives.
-    As a part of CSIT Association of BMC, the most challenging part for me was to make the changes in directions, systems as well college guidelines which somehow got solved and which was possible by our team. Majority of innovation will be exhibit soon and lastly working with an energetic team leading by me was a wonderful experience ever in my lifetime.`,
-    Post: `Senior Advisor of CSITA-BMC`,
-  },
   {
     id: 1,
     image: Bishan,
@@ -253,7 +245,7 @@ export const Testidata = [
     image: Prakash,
     Name: "Prakash Dhakal",
     testimony:
-      "CSIT Association of BMC एउटा परिवार हो, म यो संस्थालाई, संस्था भन्दा पनि परिवार भन्न रुचाउने गर्छु। जहिले देखि यस संस्थाको जन्म भयो त्यसपछि नै सम्पुर्ण बिद्यार्थीको अभिभावकको रुपमा काम गरिरहेको छ,बिद्यार्थीहरुको आवाज उठाउने र सम्बोधन गराउने काम गरिरहेको छ। यस संस्थाले क्याम्पसमै उल्लेखनीय कामहरु त गरेको छ सङ्सङै बिद्यार्थी-बिद्यार्थी बिचको घनिष्ठ आत्मियता बढाउन महत्त्वपूर्ण योगदान गरेको छ। CSIT पढ्ने बिद्यार्थी एकजुट छन भन्ने सन्देश क्याम्पसभर दिएको छ। मैले आज सम्म धेरै संस्थामा काम गरेको छु,मलाइ ती संस्थामध्ये सबैभन्दा प्यारो संस्था CSITA-BMC नै हो।",
+    "CSIT Association of BMC एउटा परिवार हो, म यो संस्थालाई, संस्था भन्दा पनि परिवार भन्न रुचाउने गर्छु। जहिले देखि यस संस्थाको जन्म भयो त्यसपछि नै सम्पुर्ण बिद्यार्थीको अभिभावकको रुपमा काम गरिरहेको छ,बिद्यार्थीहरुको आवाज उठाउने र सम्बोधन गराउने काम गरिरहेको छ। यस संस्थाले क्याम्पसमै उल्लेखनीय कामहरु त गरेको छ सङ्सङै बिद्यार्थी-बिद्यार्थी बिचको घनिष्ठ आत्मियता बढाउन महत्त्वपूर्ण योगदान गरेको छ। CSIT पढ्ने बिद्यार्थी एकजुट छन भन्ने सन्देश क्याम्पसभर दिएको छ। मैले आज सम्म धेरै संस्थामा काम गरेको छु,मलाइ ती संस्थामध्ये सबैभन्दा प्यारो संस्था CSITA-BMC नै हो।",
     Post: `Former President at CSITA-BMC`,
   },
   {
@@ -261,7 +253,7 @@ export const Testidata = [
     image: Manoj,
     Name: "Manoj Pokharel",
     testimony:
-      'CSIT Association of BMC speaks a lot more about Whole student problem rather than just being a group of people, they always focus on unity, Co-operation, and strengths to develop the better relationship between student and administration',
+    'CSIT Association of BMC speaks a lot more about Whole student problem rather than just being a group of people, they always focus on unity, Co-operation, and strengths to develop the better relationship between student and administration',
     Post: `President at CSIT Association of Nepal-Rupandehi`,
   },
   {
@@ -277,7 +269,7 @@ export const Testidata = [
     image: Sujan,
     Name: "Sujan Khatiwada",
     testimony:
-      'It was a nice moment to share the experience with curious IT people at CSIT Association, BMC.',
+    'It was a nice moment to share the experience with curious IT people at CSIT Association, BMC.',
     Post: `Fullstack Developer and founder at sathibhai.com`,
   },
   {
@@ -285,7 +277,15 @@ export const Testidata = [
     image: sindhu,
     Name: "Sindhu Aryal",
     testimony:
-      "Seeing the CSIT Association of BMC growing beautifully with the mission and vision of helping IT enthusiasts to find a way out of their IT career, widening the reach beyond the college and giving back to the community; gives me immense pleasure.Hats off to you guys for  your tireless efforts on shaping it in a way so that upcoming students don't have to face the same barriers as we did in the past. ",
+    "Seeing the CSIT Association of BMC growing beautifully with the mission and vision of helping IT enthusiasts to find a way out of their IT career, widening the reach beyond the college and giving back to the community; gives me immense pleasure.Hats off to you guys for  your tireless efforts on shaping it in a way so that upcoming students don't have to face the same barriers as we did in the past. ",
     Post: `Web Developer and President at Butwal Coder Girls`,
+  },
+  {
+    id: 8,
+    image: Rabin,
+    Name: "Rabin Pandey",
+    testimony: `Technology can be our closest companion, and technology can likewise be the greatest partypopper of our lives.It plays a major role in our lives.
+    As a part of CSIT Association of BMC, the most challenging part for me was to make the changes in directions, systems as well college guidelines which somehow got solved and which was possible by our team. Majority of innovation will be exhibit soon and lastly working with an energetic team leading by me was a wonderful experience ever in my lifetime.`,
+    Post: `Senior Advisor of CSITA-BMC`,
   },
 ];
