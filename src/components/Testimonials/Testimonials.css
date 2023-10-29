@@ -13,6 +13,7 @@ body {
 }
 .reviews--heading {
   font-size: 24px !important;
+  margin-top: 3rem;
 }
 .WellWishers {
   padding: 1rem 0rem;
@@ -71,6 +72,11 @@ body {
   justify-content: center;
   align-items: center;
 }
+.hero--wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .parentwrapper {
   width: 80%;
   height: 300px;
@@ -123,7 +129,7 @@ h5 {
     text-align: center;
     font-size: 0.66em;
   }
-
+  
   .wrapperimg {
     border-radius: 100%;
     height: 60px !important;

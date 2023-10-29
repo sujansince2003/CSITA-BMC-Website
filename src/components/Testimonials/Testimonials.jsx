@@ -67,7 +67,7 @@ const Testimonials = () => {
             modules={[Pagination]}
             className="mySwiper2"
           >
-            {Partdata.map((items, key) => {
+            {Partdata.map((items) => {
               return (
                   <SwiperSlide key={items.id}>
                     <img className="wrapperimg" src={items.Image} alt="" />
