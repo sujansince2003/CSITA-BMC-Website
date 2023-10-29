@@ -1,147 +1,86 @@
-import React from "react";
-import logo from "../../Assets/partners/logohero.png";
-import { BsFillTelephoneFill, BsFacebook } from "react-icons/bs";
-import { HiLocationMarker } from "react-icons/hi";
-import { MdEmail } from "react-icons/md";
-import { IconContext } from "react-icons";
-import "./footer.css";
+import React from 'react';
+import { Links, products, socilaMedia } from '../../data';
+import { Link } from "react-scroll";
+import FooterCard from './FooterCard';
+import { BsFillTelephoneFill } from 'react-icons/bs';
+import { HiMail } from 'react-icons/hi';
+import { FaLocationArrow } from 'react-icons/fa';
+import './footer.css';
+
 const Footer = () => {
   return (
-    <div className="FooterDiv">
-      <footer>
-        <div className="contact-item-wrapper">
-          <ContactItem
-            icon={
-              <IconContext.Provider
-                value={{
-                  color: "black",
-                  size: "33px",
-                  className: "global-class-name",
-                }}
-              >
-                <BsFillTelephoneFill />
-              </IconContext.Provider>
-            }
-            title="Phone"
-            text="+9779867824520"
-          />
-          <ContactItem
-            icon={
-              <IconContext.Provider
-                value={{
-                  color: "black",
-                  size: "33px",
-                  className: "global-class-name",
-                }}
-              >
-                <a
-                  href="https://goo.gl/maps/rPLSanzeQobPvRbb7"
-                  target="_blank"
-                  rel="noreferrer"
+    <footer className='footer' id='footer'>
+      {/* styled in main.css */}
+      <section className='footer-card-container section-end-border'>
+        <FooterCard
+          Icon={BsFillTelephoneFill}
+          title='Call'
+          decs='+977-98656565'
+        />
+        <FooterCard
+          Icon={HiMail}
+          title='Mail'
+          decs='cstiabmc@gmail.com'
+        />
+        <FooterCard
+          Icon={FaLocationArrow}
+          title='Location'
+          decs='Butwal, Nepal'
+        />
+      </section>
+      <div className='Sections-list-container'>
+        <section className='QuickLink section-end-border'>
+          <div>
+            <h5 className='footer-List_title'>Quick Links</h5>
+            <div className='footer-lists-container'>
+              {Links.map((link, id) => (
+                <Link
+                  className="footer-link-list pointer"
+                  key={`${link.title}-${id}`}
+                  to={link.path}
                 >
-                  <HiLocationMarker />
-                </a>
-              </IconContext.Provider>
-            }
-            title="Address"
-            text="Butwal-Golpark"
-          />
-          <ContactItem
-            icon={
-              <IconContext.Provider
-                value={{
-                  color: "black",
-                  size: "33px",
-                  className: "global-class-name",
-                }}
-              >
-                <a href="mailto:csitassociationbmc@gmail.com">
-                  <MdEmail />
-                </a>
-              </IconContext.Provider>
-            }
-            title="Email"
-            text="csitassociationbmc@gmail.com"
-          />
-        </div>
-        <div className="social-item-wrapper">
-          <span className="logo-bmc">
-            <img src={logo} alt="logo" />
-          </span>
-          <div className="social-links-wrapper">
-            <SocialLink
-              sicon={
-                <IconContext.Provider
-                  value={{
-                    color: "white",
-                    size: "33px",
-                    className: "global-class-name",
-                  }}
-                >
-                  <a
-                    href="https://www.facebook.com/csit.bmc/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <BsFacebook />
-                  </a>
-                </IconContext.Provider>
-              }
-            />
+                  {link.title}
+                </Link>
+              ))}
+            </div>
           </div>
-        </div>
-        <div className="footer--end">
-          <h3 className="copyright-section ">
-            © 2022 CSIT Association Of BMC. All Rights Reserved.{" "}
-          </h3>
-          <h5 className="copyright-section ">
-            Developed by{" "}
-            <a
-              className="credit"
-              target="_blank"
-              href="https://www.facebook.com/sachin.nihc"
-              rel="noreferrer"
-            >
-              Sachin Pantha
-            </a>{" "}
-            and{" "}
-            <a
-              className="credit"
-              target="_blank"
-              href="https://www.facebook.com/itsmesarad"
-              rel="noreferrer"
-            >
-              Sarad Gyawali
-            </a>{" "}
-            &lt; / &gt;
-          </h5>
-        </div>
-      </footer>
-    </div>
+        </section>
+        <section className='RecentEvents section-end-border'>
+          <div>
+            <h5 className='footer-List_title'>Recent Events</h5>
+            <div className='footer-lists-container'>
+            {products.slice(-5).map((item, index) => (
+  <Link
+    className="footer-link-list pointer"
+    key={index}
+    to={item.path}
+  >
+    {item.title}
+  </Link>
+))}
+
+            </div>
+          </div>
+        </section>
+        <section className='connectWithUs'>
+          <div>
+            <h5 className='footer-List_title'>Connect with us</h5>
+            <div className='footer-lists-container'>
+              {socilaMedia.map((item, index) => (
+                <a
+                  className="footer-link-list pointer"
+                  key={`${index}`}
+                  href={item.path}
+                >
+                  {item.name}
+                </a>
+              ))}
+            </div>
+          </div>
+        </section>
+      </div>
+    </footer>
   );
-};
+}
 
 export default Footer;
-
-function ContactItem(props) {
-  return (
-    <section className="footer-contact">
-      <div className="container">
-        <span className="icon">{props.icon}</span>
-        <div className="contact-desc">
-          <span>
-            <h1 className="heading-social">{props.title}</h1>
-          </span>
-
-          <div className="info">
-            <p>{props.text}</p>
-          </div>
-        </div>
-      </div>
-    </section>
-  );
-}
-
-function SocialLink(props) {
-  return <div className="social-icons">{props.sicon}</div>;
-}

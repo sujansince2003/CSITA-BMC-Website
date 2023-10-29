@@ -10,7 +10,7 @@ import Testimonials from "./components/Testimonials/Testimonials";
 import "aos/dist/aos.css";
 import Aos from "aos";
 const App = () => {
-  const [loader, setloader] = useState(true);
+  const [loader, setloader] = useState(false);
   useEffect(() => {
     Aos.init({ easing: "ease", duration: 700 });
   });
@@ -30,7 +30,8 @@ const App = () => {
           <About />
           <List />
           <Tlist />
-          <Testimonials /> <Footer />
+          <Testimonials />
+          <Footer />
         </>
       )}
     </div>

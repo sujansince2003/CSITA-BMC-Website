@@ -1,0 +1,41 @@
+.footer-card{
+    display: flex;
+    width: 100%;
+    padding: 2rem 0;
+    /* align-items: center; */
+    /* background: red;  */
+    margin: 0 2px;
+}
+
+.footer-icon{
+    font-size: 1.5rem;
+    color: #2d96e6;
+    
+}
+.footer-card-body{
+    display: flex;
+    flex-direction: column;
+    margin-left: 1rem;
+}
+.footer-title{
+    color: #2d96e6;
+    font-weight: 600;
+
+}
+.footer-decs{
+    padding: .2rem 0;
+    font-size: .8rem;
+    color: rgb(225, 225, 225);
+    
+}
+@media screen and (min-width: 660px) {
+    .footer-card{
+        justify-content: center;
+    }
+    .footer-card-container > :nth-child(2) {
+        border-left: rgba(114, 114, 114, 0.526) solid 2px ;
+        border-right: rgba(114, 114, 114, 0.526) solid 2px ;
+      }
+      
+    
+  }

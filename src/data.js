@@ -289,3 +289,12 @@ export const Testidata = [
     Post: `Senior Advisor of CSITA-BMC`,
   },
 ];
+
+
+//Exporting testimonials data
+export const socilaMedia = [
+  { 
+    name: 'Facebook', 
+    path: 'https://fb.com' 
+  },
+];
