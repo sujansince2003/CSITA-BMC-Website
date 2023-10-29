@@ -1,4 +1,5 @@
-{
+{	
+	"homepage": "https://im-bipo.github.io/CSITA-BMC-Website",
 	"name": "association",
 	"version": "0.1.0",
 	"chromium-args": "--disable-devtools",
