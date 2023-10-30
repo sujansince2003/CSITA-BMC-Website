@@ -1,15 +1,22 @@
 import React from "react";
 import "./Product.css";
-const Product = ({ img, title, link, id }) => {
+import { Link } from "react-router-dom";
+const Product = ({ img, title, link, id,desc}) => {
   return (
     <>
-      <a className="p" href={link} target="_blank" rel="noreferrer">
-        <div className="project-info">
-          <span className="p-title">{title}</span>
+    <div className="event-container">
+        <div className="card-items">
+          <img src={img} alt="" className="event-img" />
+          <span className="events-title">{title}</span>
+          <p className="card-description">{desc} ...</p>
+
+      <Link className="evetn-view" to={link}>
+          <p className="view"> View </p>
+      </Link>
+          {/* <div className="view-bottom"></div> */}
         </div>
 
-        <img src={img} alt="" className="event-img" />
-      </a>
+      </div>
     </>
   );
 };
