@@ -7,6 +7,7 @@ import List from "../src/components/Events/List";
 import Tlist from "./components/Tlist/Tlist";
 import Footer from "./components/Footer/Footer";
 import Testimonials from "./components/Testimonials/Testimonials";
+import Eventdetails from "./components/EventDetails/Eventdetails";
 import "aos/dist/aos.css";
 import Aos from "aos";
 const App = () => {
@@ -35,7 +36,7 @@ const App = () => {
     //   )}
     // </div>
 
-    <div>hello</div>
+    <Eventdetails />
   );
 };
 
