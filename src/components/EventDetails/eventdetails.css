@@ -2,3 +2,111 @@
 {
 padding: 50px;
 }
+
+.hero
+
+{
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    padding: 20px 0px;
+
+    
+}
+.right-hero
+{
+    display:flex ;
+    flex-direction: column;
+    gap: 20px;
+}
+.event-details-time
+{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.event-title
+{
+    font-size: 24px;
+    font-weight:bold;
+}
+.event-datetime
+{
+     display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    font-size: 18px;
+}
+.svgicons
+{
+    display: inline;
+   
+    padding-right: 10px;
+}
+
+.event-tags
+{
+    display: flex;
+    gap:10px;
+    /* padding-bottom: 100px; */
+}
+.tag
+{
+    border-radius: 30px;
+    /* background-color: burlywood; */
+    padding: 3px 20px;
+
+}
+.mentor-attendes
+{
+    display: flex;
+   gap: 200px;
+   /* padding-top: 40px;  */
+}
+.mentor
+{
+    display: flex;
+    gap: 20px;
+}
+
+.mentor-img
+{
+    border-radius: 100%;
+}
+.name
+{
+    font-size: 16px;
+}
+
+.event-summary
+{
+    text-align: justify;
+   display: flex;
+   flex-direction: column;
+   gap: 15px;
+}
+
+.register
+{
+    color: white;
+    padding: 10px 20px;
+    border-radius: 40px;
+    border: 0px solid transparent;
+    background-color: rgba(38, 41, 103, 1);
+}
+
+.event-maindetails
+{
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 50px 0px;
+    text-align: justify;
+}
+.event-extra-title
+{
+    
+    padding: 10px 0px;
+}
