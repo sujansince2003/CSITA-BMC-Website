@@ -30,7 +30,7 @@ let List;
       <h1 className="event-heading">{title}</h1>
       <div className="pl-texts"></div>
       <div className="pl-list">
-        {List.map((event) => (
+        {List.reverse().map((event) => (
           <Product
             title={Events[event].Name}
             key={`${event}`}

@@ -8,17 +8,39 @@
 .tag{
     padding: 5px 10px;
     border-radius: 20px;
-    font-size: smaller;
+    font-size: small;
 }
 .normal-tag{
     color: white;
     background-color: navy;
 }
 
-.free-tag{
-    color: white;
-    background-color: rgb(7, 166, 52);
+.upcomming-tag{
+    color: rgb(0, 0, 93);
+    /* font-size: 1rem; */
+    animation: rainbow-colors-background 2s alternate infinite;
+    animation-delay: calc(-2s * var(--char-percent));
 }
+@keyframes rainbow-colors-background {
+    0% { background-color: hsl(118, 84%, 49%); }
+    100% { background-color: hsl(64, 90%, 65%); }
+}
+.free-tag{
+    background-color: rgb(0, 0, 93);
+    font-weight: 500;
+animation: rainbow-colors 2s alternate infinite;
+animation-delay: calc(-2s * var(--char-percent));
+}
+
+
+  @keyframes rainbow-colors {
+    0% { color: hsl(0turn, 90%, 65%); }
+    25% { color: hsl(.25turn, 90%, 65%); }
+    50% { color: hsl(.5turn, 90%, 65%); }
+    75% { color: hsl(270, 96%, 80%); }
+    100% { color: hsl(1turn, 90%, 65%); }
+  }
+
 .css-tag{
     color: white;
     background-color: #0071bd;
@@ -26,4 +48,8 @@
 .javaScript-tag{
     color: white;
     background-color: #e7a229;
+}
+.python-tag{
+    background-color: #3471a1;
+    color: white;
 }

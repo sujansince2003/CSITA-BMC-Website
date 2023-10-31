@@ -1689,5 +1689,146 @@
        "description": "I found the Node.js Development Summit to be extremely valuable. The speakers were experts, and I gained valuable insights into Node.js best practices."
      }
    ]
+ },
+ "MachineLearningevent-2080": {
+   "Name": "Machine Learning Event ",
+   "Banner": "/events/img/machine-learning-2080.jpg",
+   "Date": [
+     "04 Nov, 2023",
+     "05 Nov, 2023"
+   ],
+   "time": [
+     "05:00 PM",
+     "07:00 PM"
+   ],
+   "location": "Virtual (Zoom Meets)",
+   "tags": [
+     "Free",
+     "upcomming event",
+     "Machine Learning",
+     "Python"
+   ],
+   "mentor": {
+     "name": "Kunal Kumar sahoo",
+     "photoUrl": "/events/mentor/Kunal kumar sahoo.png",
+     "post": "Research inter IIT Khadkpur"
+   },
+   "attendees": {
+     "numberOfAttendees": 80,
+     "listOfAttendees": [
+       "Sophia",
+       "Aiden",
+       "Ella",
+       "Liam",
+       "Mia",
+       "Noah",
+       "Olivia",
+       "Isabella",
+       "Emma",
+       "Charlotte",
+       "Luna",
+       "Grace",
+       "Henry",
+       "Benjamin",
+       "Evelyn",
+       "Scarlett",
+       "Nora",
+       "Zoe",
+       "Leah",
+       "Hazel",
+       "Violet",
+       "Aurora",
+       "Lucas",
+       "Daniel",
+       "James",
+       "Mila",
+       "Avery",
+       "Sofia",
+       "Camila",
+       "Aria",
+       "Riley",
+       "Stella",
+       "Natalie",
+       "Eleanor"
+     ]
+   },
+   "summary": "Machine learning events are gatherings that bring together experts, researchers, and enthusiasts in the field of machine learning. These events provide a platform for knowledge sharing, networking, and collaboration. Participants have the opportunity to learn about the latest advancements, trends, and applications in machine learning. Workshops, presentations, and panel discussions are organized to delve into various topics such as deep learning, natural language processing, computer vision, and data analysis. Machine learning events also feature keynote speakers who share their insights and experiences. These events foster a sense of community and inspire individuals to explore new ideas and push the boundaries of machine learning technology.",
+   "registrationUrl": "https://forms.gle/nodejs-summit-registration",
+   "description": [
+     {
+       "title": "Introduction",
+       "paragraph": [
+        "Join us for a deep dive into the world of Node.js development. Explore best practices, hear from experts, and discover how Node.js is powering modern applications. Network with Node.js enthusiasts from around the world.",
+        "Keynote Speeches: Machine learning events often feature renowned keynote speakers who share their expertise and insights. These speakers are industry leaders, researchers, or practitioners who have made significant contributions to the field. Their speeches provide valuable perspectives on the latest trends, challenges, and future directions in machine learning.",
+        "Workshops and Tutorials: To facilitate hands-on learning, machine learning events organize workshops and tutorials. These sessions offer participants the opportunity to gain practical knowledge and skills in specific areas of machine learning. Topics covered may include deep learning, natural language processing, computer vision, and data analysis. Participants can engage in interactive sessions, work on real-world problems, and learn from experienced instructors.",
+        "Presentations and Paper Sessions: Machine learning events often include presentations and paper sessions where researchers and practitioners present their work. These sessions showcase cutting-edge research, innovative algorithms, and novel applications of machine learning. Attendees can learn about the latest advancements, methodologies, and experimental results in the field. This fosters collaboration and encourages the exchange of ideas among participants."
+      ]
+     },
+     {
+       "title": "Mentor",
+       "paragraph": [
+        "During this summit, you'll gain insights into Node.js best practices, scalability, and performance optimization. Whether you're a beginner or an experienced developer, you'll find valuable content.",
+      "The mentor of the machine learning event is Dr. Samantha Roberts, a renowned expert in the field of artificial intelligence and machine learning. With over 20 years of experience, Dr. Roberts has made significant contributions to the development and application of machine learning algorithms. She holds a Ph.D. in Computer Science from Stanford University and has published numerous research papers in top-tier conferences and journals.",
+        "As the mentor of the event, Dr. Roberts brings her expertise and guidance to the participants. She is known for her passion for mentoring and nurturing young talent in the field of machine learning. Dr. Roberts conducts interactive sessions and workshops, where she shares her knowledge, insights, and practical tips for success in the field."
+      ]
+     },
+     {
+       "title": "Key Concept",
+       "paragraph": "Machine learning events play a crucial role in advancing the field of machine learning. Through keynote speeches, workshops, presentations, panel discussions, and networking opportunities, these events foster knowledge sharing, collaboration, and innovation. They provide a platform for researchers, practitioners, and enthusiasts to stay updated with the latest advancements, explore new ideas, and contribute to the growth of machine learning technology."
+     }
+   ],
+   "timeline" :
+   [
+      {
+     "time" : "20 min",
+     "icon" : "",
+     "primary" : "Introduction to AI: AI vs ML vs DL, Types of ML problems, Basic ML project workflow, Applications of ML",
+     "secondary" : "Day 1"
+    },
+      {
+     "time" : "30 min",
+     "icon" : "",
+     "primary" : " Basics of NumPy, Pandas, Matplotlib and Sci-kit learn",
+     "secondary" : "Day 1"
+    },
+      {
+     "time" : "30 min",
+     "icon" : "",
+     "primary" : "Supervised Learning algorithms (Linear regression, Logistic regression, SVM and Random Forest)",
+     "secondary" : "Day 1"
+    },
+      {
+     "time" : "20 min",
+     "icon" : "",
+     "primary" : "Unsupervised Machine Learning Algorithms (KNN, K-Means Clustering, PCA)",
+     "secondary" : "Day 1"
+    },
+      {
+     "time" : "15 min",
+     "icon" : "",
+     "primary" : "Basic discussion on Reinforcement Learning",
+     "secondary" : "Day 1"
+    },
+      {
+     "time" : "5 min",
+     "icon" : "",
+     "primary" : "QnA Section",
+     "secondary" : "Day 1"
+    }
+    ],
+   "reviews": [
+     {
+       "reviewerName": "Liam Wilson",
+       "reviewerLevel": "Full-stack Developer",
+       "stars": 4,
+       "description": "The Node.js Development Summit was an informative event. I learned a lot about optimizing Node.js applications for performance."
+     },
+     {
+       "reviewerName": "Olivia Smith",
+       "reviewerLevel": "Node.js Developer",
+       "stars": 5,
+       "description": "I found the Node.js Development Summit to be extremely valuable. The speakers were experts, and I gained valuable insights into Node.js best practices."
+     }
+   ]
  }
 }

@@ -27,7 +27,6 @@ const EventPage = () => {
       });
   }, [eventId]);
   
-
   if(isLoading) {
     return <div>Loading...</div>;
   }
@@ -48,7 +47,9 @@ const EventPage = () => {
         <div className="middle-div">
           <EventDescription description={event.description}/>
         </div>
-      <TimeLine/>
+
+      { event.timeline && <TimeLine events={event.timeline}/>}
+        
       </div>
 
       <Footer />

@@ -7,7 +7,7 @@ const EventDescription = ({ description }) => {
     <>
       <div className="middle-contents">
         {Object.keys(description).map((item, index) => (
-          <div key={index}>
+          <div className="decs" key={index}>
             <span className="heading">{description[item].title}</span>
             <Pragraph pragraph={description[item].paragraph} />
           </div>

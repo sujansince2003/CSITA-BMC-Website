@@ -9,6 +9,10 @@ const Tags = ({tags}) => {
             {
                 return 'tag free-tag'
             }
+            case 'upcomming event': 
+            {
+                return 'tag upcomming-tag'
+            }
             case 'CSS': 
             {
                 return 'tag css-tag'
@@ -17,7 +21,11 @@ const Tags = ({tags}) => {
             {
                 return 'tag javaScript-tag'
             }
-
+            case 'Python': 
+            {
+                return 'tag python-tag'
+            }
+            
             default : 
             {
                 return 'tag normal-tag'
@@ -30,7 +38,7 @@ const Tags = ({tags}) => {
     
       <div className="tags">
     {tags.map(((tag,index)=>(
-        <div className={colorTag(tag)} key={index}># {tag}</div>
+        <div className={colorTag(tag)} key={index}>#{tag}</div>
     )))}
   </div>
   )
