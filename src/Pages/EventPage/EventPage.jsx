@@ -5,8 +5,8 @@ import "./eventPage.css";
 import Navigation from "../../components/Navigation/Navigation";
 import QuickDetails from "./Components/Quick Details Card/QuickDetails";
 import EventDescription from "./Components/Description/EventDescription";
-import Review from "./Components/Reviews/Review";
 import Footer from "../../components/Footer/Footer";
+import TimeLine from "./Components/TimeLine/TimeLine";
 
 const EventPage = () => {
 
@@ -22,7 +22,6 @@ const EventPage = () => {
       })
       .then((myJson) => {
         setEvent(myJson[eventId]);
-        console.log('first');
         
         setIsLoading(false);
       });
@@ -47,11 +46,9 @@ const EventPage = () => {
       <div className="maindiv">
         <QuickDetails event={event} />
         <div className="middle-div">
-          <EventDescription />
+          <EventDescription description={event.description}/>
         </div>
-        <div className="lower-div">
-          <Review />
-        </div>
+      <TimeLine/>
       </div>
 
       <Footer />

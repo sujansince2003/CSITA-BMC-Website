@@ -25,6 +25,7 @@ const Navigation = () => {
 
   //toggel solid nav bar based onevent 
   window.onscroll = toggleSolidNavBar
+  // eslint-disable-next-line
   useEffect( toggleSolidNavBar,[])
   
   
@@ -39,7 +40,9 @@ const Navigation = () => {
   return (
     <nav id="nav" className="nav-area">
       <div className="logo">
+      <Link to='/'>
         <img src={IMG} alt="" />
+      </Link>
       </div>
       <div className="TheLists">
         <div id="ham-menu" className="hamburger ham-menu" onClick={handleHam}>
@@ -56,7 +59,7 @@ const Navigation = () => {
                 to={link.path}
                 // spy={true}
                 onClick={handleHam}
-                activeClass="active"
+                // activeClass="active"
               >
                 {link.title}
               </Link>

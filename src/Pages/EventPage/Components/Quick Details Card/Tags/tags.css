@@ -1,0 +1,29 @@
+.tags{
+    font-size: small;
+    display: flex;
+     padding: 5px;
+    gap: 12px;
+}
+
+.tag{
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: smaller;
+}
+.normal-tag{
+    color: white;
+    background-color: navy;
+}
+
+.free-tag{
+    color: white;
+    background-color: rgb(7, 166, 52);
+}
+.css-tag{
+    color: white;
+    background-color: #0071bd;
+}
+.javaScript-tag{
+    color: white;
+    background-color: #e7a229;
+}

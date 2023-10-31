@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import { Link } from 'react-router-dom';
 
 import Product from "./Product/Product";
-import { products } from "../../data";
 import "./List.css";
 
 
@@ -42,9 +40,7 @@ let List;
           />
         ))}
       </div>
-      <div className="">
-
-      </div>
+      {/* <div className=""></div> */}
     </div>
       </>
   );

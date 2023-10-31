@@ -776,6 +776,7 @@
    "location": "Online",
    "tags": [
      "Free",
+     "CSS",
      "JavaScript",
      "Web Development"
    ],
@@ -1390,7 +1391,8 @@
    "description": [
      {
        "title": "Event Overview",
-       "paragraph": "Join us for a deep dive into the world of JavaScript. Learn about the latest features of the language, explore best practices, and discover how JavaScript powers modern web development. You'll also have the chance to connect with JavaScript enthusiasts from around the world."
+       "paragraph": ["Join us for a  deep dive into the world of JavaScript. Learn about the latest features of the language, explore best practices, and discover how JavaScript powers modern web development. You'll also have the chance to connect with JavaScript enthusiasts from around the world.",
+       "dfdfd uage, explore best practices, and discover how JavaScript powers modern web development. You'll also have the chance to connect with JavaScript enthusiasts from around the."]
      },
      {
        "title": "What to Expect",

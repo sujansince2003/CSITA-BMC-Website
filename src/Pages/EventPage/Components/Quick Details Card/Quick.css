@@ -1,10 +1,10 @@
 
 
 .upper-div{
-    padding: 0 50px 40px 50px;
-    /* height: fit;  */
+    padding: 3rem 50px 40px 50px;
     display: flex;
     justify-content: space-between;
+    background-color: rgb(244, 246, 255);
     
 }
 
@@ -17,11 +17,14 @@
 
 }
 
+
 .event{
-    
-    margin-left: 20px;
-    width: 110%;
+    padding: 0 2rem;
+    margin: auto;
+    width: 95%;
+    padding: 2rem;
     text-align: left;
+    position: relative;
 }
 
 
@@ -29,7 +32,7 @@
 .event-title{
     font-size: xx-large;
     font-weight: 700;
-  padding-left: 15px;
+  /* padding-left: 15px; */
 
 }
 
@@ -50,32 +53,8 @@
     text-align: left;
 }
 
-
-
-.tags{
-    font-size: small;
-    display: flex;
-     padding: 5px;
-    gap: 12px;
-}
-
-.tag{
-    color: white;
-    padding: 5px 10px;
-    border-radius: 20px;
-    font-size: smaller;
-}
-
-.free{
-    background: rgb(58, 209, 58);
-}
-
-.upcoming{
-    background-color: rgb(129, 129, 251);
-}
-
-.workshop{
-    background-color: navy;
+.event-ide{
+    font-weight: 400;
 }
 
 .hr-line{
@@ -87,8 +66,6 @@
 
 .mentor{
     display: flex;
-  
-    align-items: center;
 }
 
 .mentorimg{
@@ -185,4 +162,16 @@
 
 .button a:hover{
     background-color: rgb(22, 22, 173);
+}
+
+
+@media  screen and (max-width:1100px ) {
+
+    .event{
+        top: -4rem;
+    }
+    .upper-div{
+        padding: 0 ;
+        
+    }
 }

@@ -1,33 +1,20 @@
-import { React, useEffect, useState } from "react";
+import React from "react";
 
 import Header from "../components/Header/Header";
 import About from "../components/About/About";
-import Loader from "../components/Loader/loader";
 import Navigation from "../components/Navigation/Navigation";
 import List from "../components/Events/List";
 import Tlist from "../components/Tlist/Tlist";
 import Footer from "../components/Footer/Footer";
 import Testimonials from "../components/Testimonials/Testimonials";
 import "aos/dist/aos.css";
-import Aos from "aos";
+
 
 
 const HomePage = () => {
 
-  const [loader, setloader] = useState(false);
-  useEffect(() => {
-    Aos.init({ easing: "ease", duration: 700 });
-  });
-  useEffect(() => {
-    setTimeout(() => {
-      setloader(false);
-    }, 2000);
-  });
   return (
     <div>
-      {loader ? (
-        <Loader />
-      ) : (
         <>
           <Navigation />
           <Header />
@@ -37,7 +24,7 @@ const HomePage = () => {
           <Testimonials />
           <Footer />
         </>
-      )}
+
     </div>
   );
 };

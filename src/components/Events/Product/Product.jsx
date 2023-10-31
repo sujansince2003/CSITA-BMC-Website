@@ -7,14 +7,16 @@ const Product = ({ img, title, link, id,desc}) => {
     <div className="event-container">
         <div className="card-items">
           <img src={img} alt="" className="event-img" />
-          <span className="events-title">{title}</span>
+          <div className="card-details">
+
+          <h4 className="events-title">{title}</h4>
           <p className="card-description">{desc} ...</p>
 
-      <Link className="evetn-view" to={link}>
-          <p className="view"> View </p>
+      <Link className="card-view-button" to={link}>View 
       </Link>
           {/* <div className="view-bottom"></div> */}
         </div>
+          </div>
 
       </div>
     </>

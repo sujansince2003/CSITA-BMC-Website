@@ -1,57 +1,46 @@
 import React from 'react'
 import { FaChalkboardTeacher } from "react-icons/fa";
+import { AiOutlineClockCircle } from "react-icons/ai";
+import { MdDateRange } from "react-icons/md";
+import { GrLocation } from "react-icons/gr";
 import './Quick.css'
+import Tags from './Tags/Tags';
 
 const QuickDetails = ({ event }) => {
 
 
   return (
     <>
-
       <div className="bg-div">
         <div className="upper-div">
           <div className="imgdiv">
             <img
               src={event.Banner}
               className="img"
+              alt={event.Name}
             />
           </div>
 
           <div className="event">
-            <span className="event-title">{event.Name}</span>
+            <h4 className="event-title">{event.Name}</h4>
 
             <div>
               <div className="event-details">
-                <img
-                  src="https://images.unsplash.com/photo-1695173585480-e4d0724ec5b5?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  className="icon"
-                  alt=''
-                />
-                <span className="">{event.Date}</span>
+               <MdDateRange className='icon'/>
+                <h4 className="event-ide">{event.Date}</h4>
               </div>
               <div className="event-details">
-                <img
-                  src="https://images.unsplash.com/photo-1695173585480-e4d0724ec5b5?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  className="icon"
-                  alt=''
-                />
-                <span className="">{event.time}</span>
+               <AiOutlineClockCircle className='icon'/>
+                <h4 className="event-ide">{event.time}</h4>
               </div>
               <div className="event-details">
-                <img
-                  src="https://images.unsplash.com/photo-1695173585480-e4d0724ec5b5?auto=format&fit=crop&q=80&w=2070&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-                  className="icon"
-                  alt=''
-                />
-                <span className="">{event.location}</span>
+               
+               <GrLocation className='icon'/>
+                <h4 className="event-ide">{event.location}</h4>
               </div>
             </div>
 
-            <div className="tags">
-              <div className="tag free"># {event.tags[0]}</div>
-              <div className="tag upcoming"># {event.tags[1]}</div>
-              <div className="tag workshop"># {event.tags[2]}</div>
-            </div>
+            <Tags tags={event.tags}/>
 
             <hr className="hr-line" />
 
@@ -65,6 +54,7 @@ const QuickDetails = ({ event }) => {
                   <img
                     src={event.mentor.photoUrl}
                     className="mentorimg"
+                    alt={event.mentor.name}
                   />
 
                   <div>
@@ -78,13 +68,13 @@ const QuickDetails = ({ event }) => {
                 <span className="attendees">Attendees :</span>
                 <p className="attendeesname">
                   Sanchit Pandey, Bipin Khatri, Sujan Khatri,{" "}
-                  <a
+                  <span
                     className="attendeesnamehover"
                     title={event.attendees.listOfAttendees}>
 
                     {event.attendees.numberOfAttendees} others
 
-                  </a>{" "}
+                  </span>{" "}
                 </p>
               </div>
             </div>

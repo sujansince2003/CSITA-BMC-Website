@@ -1,7 +1,7 @@
 
 .middle-contents{
-    margin: 40px 50px 0 50px;
-    /* height: fit-content; */
+    margin: 40px auto;
+    max-width: 65rem;
 
 }
 
