@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import IMG from "../../Assets/partners/logohero.png";
 import "./navigation.css";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 import { Links } from "../../data";
 const Navigation = () => {
 
@@ -9,6 +9,7 @@ const Navigation = () => {
   const pathname = window.location.href
   const url = window.location.protocol + '//' + window.location.host+'/'
   const Url = window.location.protocol + '//' + window.location.host+'/#/'
+
   const toggleSolidNavBar = () =>{
     let navbar = document.querySelector(".nav-area");
     if (window.scrollY < 600 && (pathname === url || pathname === Url )) {
@@ -53,7 +54,7 @@ const Navigation = () => {
                 className="link"
                 key={`${link.title}-${id}`}
                 to={link.path}
-                spy={true}
+                // spy={true}
                 onClick={handleHam}
                 activeClass="active"
               >

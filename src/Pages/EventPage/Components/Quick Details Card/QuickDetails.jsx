@@ -48,9 +48,9 @@ const QuickDetails = ({ event }) => {
             </div>
 
             <div className="tags">
-              <div className="tag free">#{event.tags[0]}</div>
-              <div className="tag upcoming">#{event.tags[1]}</div>
-              <div className="tag workshop">#{event.tags[2]}</div>
+              <div className="tag free"># {event.tags[0]}</div>
+              <div className="tag upcoming"># {event.tags[1]}</div>
+              <div className="tag workshop"># {event.tags[2]}</div>
             </div>
 
             <hr className="hr-line" />

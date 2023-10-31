@@ -12,7 +12,6 @@ const Teams = ({ img, Name, Post, Facebook }) => {
         <div className="social-icons">
           <div className="profile">
             <a href={Facebook} target="_blank" rel="noreferrer">
-              {/* <BsFacebook size={"25px"} color="#3B5998" /> */}
               View Profile
             </a>
           </div>

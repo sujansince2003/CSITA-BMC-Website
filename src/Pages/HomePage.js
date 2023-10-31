@@ -10,7 +10,10 @@ import Footer from "../components/Footer/Footer";
 import Testimonials from "../components/Testimonials/Testimonials";
 import "aos/dist/aos.css";
 import Aos from "aos";
+
+
 const HomePage = () => {
+
   const [loader, setloader] = useState(false);
   useEffect(() => {
     Aos.init({ easing: "ease", duration: 700 });
@@ -29,7 +32,7 @@ const HomePage = () => {
           <Navigation />
           <Header />
           <About />
-          <List />
+          <List showAll={false} title='Some Events Organize By CSITA-BMC' />
           <Tlist />
           <Testimonials />
           <Footer />

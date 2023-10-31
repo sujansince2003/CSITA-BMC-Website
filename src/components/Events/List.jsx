@@ -6,9 +6,9 @@ import { products } from "../../data";
 import "./List.css";
 
 
-const List = () => {
+const List = ({title,showAll}) => {
   const [Events, setEvents] = useState([]);
-
+let List;
   useEffect(() => {
     fetch('./events/events.json')
     .then((response) => {
@@ -19,20 +19,25 @@ const List = () => {
     });
   }, []);
   
-  console.log(Events);
+  if(showAll){
+    List = Object.keys(Events)
+  }
+  else{
+    List = Object.keys(Events).slice(-8)
+  }
 
   return (
     <>
     <div className="pl events">
-      <h1 className="event-heading">Some Events Organized By CSITA-BMC</h1>
+      <h1 className="event-heading">{title}</h1>
       <div className="pl-texts"></div>
       <div className="pl-list">
-        {Object.keys(Events).map((event) => (
+        {List.map((event) => (
           <Product
             title={Events[event].Name}
             key={`${event}`}
             img={Events[event].Banner}
-            link={`event/${event}`}
+            link={`/events/${event}`}
             desc={Events[event].summary.slice(0,150)}
           />
         ))}

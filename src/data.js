@@ -45,28 +45,28 @@ import sindhu from "./Team/sindhu.jpg"
 export const Links = [
   {
     title: "Home",
-    path: "home",
+    path: "/",
   },
   {
     title: "About",
-    path: "about",
+    path: "/about",
   },
   {
     title: "Events",
-    path: "events",
+    path: "/events",
   },
   {
     title: "Teams",
-    path: "teams",
-  },
-  {
-    title: "Reviews",
-    path: "myReview",
-  },
-  {
-    title: "Contact",
-    path: "FooterDiv",
-  },
+    path: "/teams",
+  }
+  // {
+  //   title: "Reviews",
+  //   path: "myReview",
+  // },
+  // {
+  //   title: "Contact",
+  //   path: "FooterDiv",
+  // },
 ];
 
 //Exporting Event details
