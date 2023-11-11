@@ -1,7 +1,6 @@
 .parent {
   box-shadow: 0 0 10px 1px rgb(0 0 0 / 9%);
   background-color: #fff;
-  flex-wrap: wrap;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -58,4 +57,24 @@
 .profile a{
   text-decoration: none;
   color: rgb(44, 44, 44);
+}
+
+@media screen and (min-width:440px) and (max-width:480px) {
+   
+  .parent{
+     width : 40%;
+  }
+
+  /* .p-img{
+    width : 100%;
+  }
+
+  .Name{
+    width : 100%;
+  }
+
+  .Post{
+    width : 100%
+  }
+   */
 }

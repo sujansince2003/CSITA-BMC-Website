@@ -19,7 +19,6 @@
 
 
 .event{
-    padding: 0 2rem;
     margin: auto;
     width: 95%;
     padding: 2rem;
@@ -67,10 +66,15 @@
 
 .mentor{
     display: flex;
+    width: 42vw;
 }
-
+.mentor-socialProfile{
+    text-decoration: none;
+    color: unset;
+    cursor: default;
+}
 .mentorimg{
-    
+    cursor: pointer;
     width: 30px;
     height: 30px;
     text-align: left;
@@ -82,13 +86,12 @@
 }
 
 .mentortxt{
- 
-   display: flex;
-   align-items: center;
-   font-weight: 600;
-   font-size: larger;
-   padding: 0 15px;
-   gap: 10px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: larger;
+    padding: 0 15px;
+    gap: 10px;
 }
 
 .attendeesnamehover{
@@ -100,7 +103,8 @@
 .mentorname{
     padding: 10px 20px;
     display: flex;
-    align-items: center;
+    align-items: center;    
+    cursor: pointer;
     font-size: small;
     gap: 20px;
 }
@@ -166,8 +170,11 @@
 }
 
 
-@media  screen and (max-width:1100px ) {
+@media  screen and (max-width:1200px ) {
 
+    .mentor{
+        width: 95vw;
+    }
     .event{
         top: -4rem;
     }
@@ -175,4 +182,9 @@
         padding: 0 ;
         
     }
+}
+@media  screen and (max-width:400px ) {
+.event{
+    padding: 1rem;
+}
 }

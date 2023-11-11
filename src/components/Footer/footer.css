@@ -7,19 +7,22 @@ footer {
 
 .Sections-list-container {
   color: rgb(93, 93, 93);
+ 
 }
+
 .footer-card-container, .QuickLink, .RecentEvents, .connectWithUs{
   margin: 0 3rem;
   padding: 1rem 0;
   width: 100%;
   display: flex;
   flex-direction: column;
+  
 }
 
 
 .footer-List_title{
   color: rgb(207, 207, 207);
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .footer-lists-container{
@@ -30,7 +33,7 @@ footer {
 
 .footer-link-list{
   padding: 3px 0;
-  font-size: .75rem;
+  font-size: .9rem;
   text-decoration: none;
   color: rgb(204, 204, 204);
   
@@ -44,24 +47,64 @@ footer {
   footer{
     padding: 0 2rem;
   }
+
+
+
   .footer-card-container{
     flex-direction: row;
     margin: 0;
   }
+
+  
 }
   @media screen and (min-width: 830px) {
     .QuickLink , .RecentEvents, .connectWithUs {
       display: flex;
       align-items: left;
+      
     }
     
   .Sections-list-container {
     margin-top: 4rem;
     display: flex;     
+ 
 
   }
   .Sections-list-container .section-end-border{
     border-bottom: none;
   }
+
+
+
+}
+
+@media screen and (max-width : 829px) {
+
+  .Sections-list-container{
+    padding-right: 10vw !important;
+  }
   
+}
+
+
+@media screen and (max-width :660px){
+
+  .section-end-border{
+    width: 80vw;
+  }
+  
+}
+
+
+.copyright{
+  text-align: center;
+  background: #212121;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: rgb(207, 207, 207);
+  font-size: .7rem;
+  font-weight:700;
+  word-spacing:2px;
 }

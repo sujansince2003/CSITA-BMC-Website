@@ -1,6 +1,7 @@
 .tags{
     font-size: small;
     display: flex;
+    flex-wrap:wrap;
      padding: 5px;
     gap: 12px;
 }

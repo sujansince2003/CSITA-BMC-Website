@@ -1,5 +1,5 @@
 .TimeLine{
-    background: rgb(239, 239, 239); 
+    background: rgb(237, 237, 237); 
     padding: 3rem 0;
 }
 .timeLine-title{
@@ -9,6 +9,26 @@
     margin: 2rem 0;
 }
 
+.day-Select{
+    display: flex;
+    justify-content: center;
+    margin: 2rem 0;
+    gap: 1rem;
+}
+.days-set{
+    padding: 1rem 2rem;
+    background-color: white;
+    font-weight: 600;
+    color: #025297;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.active-day-select{
+    padding: 1rem 2rem;
+    background-color: #025297;
+    color: white;
+    border-radius: 10px;
+}
 .timeline-primary{
     font-size: 1rem;
 }

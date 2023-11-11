@@ -45,7 +45,8 @@ const QuickDetails = ({ event }) => {
             <hr className="hr-line" />
 
             <div className="mentor">
-              <div className="">
+          <a className='mentor-socialProfile' href={`${event.mentor.socilaProfile}`}>
+              <div className="mentor-details">
                 <div className="mentortxt">
                   <FaChalkboardTeacher className='mentoricon' />
                   <span>Mentor</span>
@@ -63,11 +64,12 @@ const QuickDetails = ({ event }) => {
                   </div>
                 </div>
               </div>
+              </a>
 
-              <div>
+              <div className='attendees-details'>
                 <span className="attendees">Attendees :</span>
                 <p className="attendeesname">
-                  Sanchit Pandey, Bipin Khatri, Sujan Khatri,{" "}
+                  Sanchit Pandey, Bipin Khatri,<br/> Sujan Khatri,{" "}
                   <span
                     className="attendeesnamehover"
                     title={event.attendees.listOfAttendees}>

@@ -7,13 +7,13 @@ import QuickDetails from "./Components/Quick Details Card/QuickDetails";
 import EventDescription from "./Components/Description/EventDescription";
 import Footer from "../../components/Footer/Footer";
 import TimeLine from "./Components/TimeLine/TimeLine";
+import Review from "./Components/Reviews/Review";
+import { BeatLoader } from "react-spinners";
 
 const EventPage = () => {
 
   const [event, setEvent] = useState([]);
-  
   const [isLoading, setIsLoading] = useState(true);
-
   const { eventId } = useParams();
   useEffect(() => {
     fetch("../events/events.json")
@@ -28,7 +28,11 @@ const EventPage = () => {
   }, [eventId]);
   
   if(isLoading) {
-    return <div>Loading...</div>;
+    return (
+      <div className='loader' >
+            <BeatLoader color="#2534dc" size={20} />
+          </div>
+    )
   }
     //social media share
     document.title = event.Name;
@@ -48,10 +52,9 @@ const EventPage = () => {
           <EventDescription description={event.description}/>
         </div>
 
-      { event.timeline && <TimeLine events={event.timeline}/>}
-        
+      { event.timeline && <TimeLine days={event.noOfDays} events={event.timeline}/>}
+        <Review reviews={event.reviews}/>
       </div>
-
       <Footer />
     </div>
   );

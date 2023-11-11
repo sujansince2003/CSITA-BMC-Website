@@ -1,23 +1,8 @@
 
 .maindiv{
     background-color: #F7F7F7;
-    /* padding-top: 3rem; */
 }
-
-.reviews-title{
-    background-color:navy;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #F7F7F7;
-    font-size: x-large;
-    font-weight: 700;
-  
-}
-
-
-@media  screen and (max-width:1100px ) {
+@media  screen and (max-width:1200px ) {
 
 
     .maindiv{
@@ -65,6 +50,9 @@
     .mentor{
         display: flex;
         flex-direction: column;
+    }
+    .attendees-details,.mentor-details{
+        width: fit-content;
     }
 
     .button{
