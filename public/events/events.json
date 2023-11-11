@@ -194,6 +194,12 @@
       "Futsal",
       "CSITABMC"
     ],
+    "mentor": {
+      "socilaProfile": "https://linkedin.com",
+      "name": "Chris Miller",
+      "photoUrl": "https://example.com/chris-miller-photo.jpg",
+      "post": "Footbal Coach"
+    },
     "attendees": {
       "numberOfAttendees": 50,
       "listOfAttendees": [
@@ -656,8 +662,8 @@
     "Name": "Machine Learning Event ",
     "Banner": "/events/img/Machinelearning.jpg",
     "Date": [
-      "04 Nov, 2023 - ",
-      "05 Nov, 2023"
+      "11 Nov, 2023 - ",
+      "12 Nov, 2023"
     ],
     "time": [
       "05:00 PM - ",
@@ -674,7 +680,7 @@
       "socilaProfile": "https://linkedin.com",
       "name": "Kunal Kumar sahoo",
       "photoUrl": "/events/mentor/Kunal kumar sahoo.png",
-      "post": "Research inter IIT Khadkpur"
+      "post": "Intern  IIT Khadkpur"
     },
     "attendees": {
       "numberOfAttendees": 80,

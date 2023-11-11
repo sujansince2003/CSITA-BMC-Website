@@ -2,7 +2,6 @@ import React from "react";
 import "./Review.css";
 
 const Review = ({ reviews }) => {
-  console.log(reviews.length);
   if (reviews.length === 0) {
     return (
       <>
